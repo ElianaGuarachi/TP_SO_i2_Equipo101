@@ -14,5 +14,105 @@ de alfa y luego el merge.
 d- ¿Los datos que tenía en mi repositorio, editados por mi, se pierden si quiero actualizar el fork?
 No se pierden ya que se pueden sincronizar
 
+e-Gamma y Alpha para la primera utilizaron el metodo GitFlow. Trabajaron con ramas alternativas.
 
+Franco David Messina (Gamma)
+Forkeo el repositorio https://github.com/ElianaGuarachi/TP_SO_i2_Equipo101.
+git clone https://github.com/ElianaGuarachi/TP_SO_i2_Equipo101
+git checkout -b"DatosGamma"
+ls
+git add .
+git commit -m"Datos de gamma"
+git push origin DatosGamma
+Una vez aceptada la git pull request borro la rama creada.
+git branch -d DatosGamma //Forma local
+git push origin --delete DatosGamma //Remotamente
+
+Creó una git pull request al repositorio del fork (Beta).
+
+Alfredo Gonzalez (Alpha)
+Forkeo el repositorio https://github.com/ElianaGuarachi/TP_SO_i2_Equipo101.
+git clone https://github.com/ElianaGuarachi/TP_SO_i2_Equipo101
+git checkout -b"InfoAlfa"
+git status
+git add .
+git commit -m"InfoAlfa"
+git status
+git push origin InfoAlfa
+Una vez aceptada la git pull request borro la rama creada.
+git branch -d InfoAlfa//Forma local
+git push origin --delete InfoAlfa//Remotamente
+
+Creó una git pull request al repositorio del fork (Beta).
+
+Guarachi Sarzuri, Eliana (Beta)
+
+Acepta las dos peticiones, y se hizo un Merge pull request, es decir,
+primero un Merge branch 'main' into DatosGamma y luego un Merge a la branch de alfa.
+Otra manera que se podria intentar es : git pull https://github.com/alfredgonzalez/TP_SO_i2_Equipo101,
+y luego git pull https://github.com/FrancoMessina/TP_SO_i2_Equipo101
+
+git pull
+git status
+git add .
+git commit -m "NuevoDato"
+git push
+
+git status
+git add .
+git commit -m "respuesta"
+git push
+
+Franco David Messina (Gamma)
+git pull https://github.com/ElianaGuarachi/TP_SO_i2_Equipo101
+git status
+git add .
+git commit -m"Respuestas de gamma"
+git status
+git push 
+
+Creó una git pull request al repositorio del fork (Beta).
+
+Guarachi Sarzuri, Eliana (Beta)
+Beta acepta la git pull request.
+Beta sube sus respuestas
+git pull
+git status
+git add .
+git commit -m"Respuestas de beta"
+git push
+
+Alfredo Gonzalez (Alpha)
+git pull https://github.com/ElianaGuarachi/TP_SO_i2_Equipo101
+git add .
+git commit -m"Respuestas de Alfa"
+git status
+git push 
+
+Creó una git pull request al repositorio del fork (Beta).
+
+Guarachi Sarzuri, Eliana (Beta)
+
+Acepta la peticiones, y hace un Merge pull request.
+Esto se puede hacer aceptando la peticion desde el repositorio y despues hacer un git pull al mismo repositorio o 
+hacer un git pull directamente al repositorio de Alfa. 
+
+Alfredo Gonzalez (Alpha)
+git pull https://github.com/alfredgonzalez/TP_SO_i2_Equipo101
+git status
+git add .
+git commit -m"Repositorio Final"
+git status
+git push 
+
+
+Franco David Messina (Gamma)
+Ahora solo falta que Gamma haga el ultimo git pull asi todos tenemos las actualizaciones.
+
+git pull https://github.com/ElianaGuarachi/TP_SO_i2_Equipo101
+git status
+git add .
+git commit -m"Repositorio Final"
+git status
+git push
 
